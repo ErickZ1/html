@@ -1,0 +1,52 @@
+.contact-body {
+    background-color: var(--primary-color);
+    color: var(--text-color-inverse);
+    border: 10px solid var(--primary-color);
+    padding: 10px;
+}
+
+.wave_contact {
+    top: 6px;
+}
+
+.contact-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 25px;
+}
+
+.contact-date {
+    display: flex;
+    justify-content: space-between;
+    max-width: 450px;
+    margin: 0px auto;
+}
+.contact-date i{
+    color: white;
+}
+.icon-date {
+    font-size: 20px;
+    margin:  0 10px;
+    padding: 5px;
+    border-radius: 10px;
+    position: relative;
+}
+.icon-insta {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+
+}
+.icon-wsp{
+    background: var(--icon-wsp-color);
+}
+.icon-messenger {
+    background: var(--icon-fb-color)
+}
+.icon-git{
+    background: var(--icon-git-color);
+}

@@ -1,0 +1,45 @@
+* {
+    font-family: cursive;
+    font-weight: 100px;
+}
+.container{
+    height: 100%;
+    background: #fad;
+    padding: 30px;
+}
+.caja{
+    background: #afd;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    transition-property: left, background;
+    transition-duration: 3s, 2s;
+    position: relative;
+    left: 0;
+}
+.container:hover > .caja{
+    left:80%;
+    background: #fff;
+    
+}
+.caja:first-child{
+    transition-timing-function: linear;
+}
+.caja:nth-child(2){
+    transition-timing-function: ease;
+}
+.caja:nth-child(3){
+    transition-timing-function: ease-in;
+}
+.caja:nth-child(4){
+    transition-timing-function: ease-out;
+}
+.caja:nth-child(5){
+    transition-timing-function: ease-in-out;
+}
+.caja:nth-child(6){
+    transition-timing-function: ease-in-out;
+}
+.caja:nth-child(7){
+    transition-timing-function: ease-in-out;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pews</title>
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="/style/navbar.css">
+    <link rel="stylesheet" href="/style/profile.css">
+    <link rel="stylesheet" href="/style/skills.css">
+    <link rel="stylesheet" href="/style/contact.css">
+    <link rel="stylesheet" href="/style/experience.css">
+    <link rel="stylesheet" href="/style/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script defer src="/js/ap.js"></script>
+</head>
+
+<body>
+    <header class="topheader">
+        <nav class="topnav">
+            <a href="#" class="logo">
+                <img width="50px" height="50px" src="/img/erick.jpeg" alt="Programador">
+                <div class="nav-title">
+                    Erick Zavaleta
+                </div>
+            </a>
+            <button class="open-menu" aria-label="Abrir menu">
+                <i class="bi bi-list"></i>
+            </button>
+            <ul class="menu">
+                <button class="close-menu" aria-label="cerrar menu">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+                <li><a href="#profile" class="selected">Perfil</a></li>
+                <li><a href="#esperience">Experiencia</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact">contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="horizontal-padding vertical-padding">
+        <section class="profile" id="profile">
+            <div class="profile-info">
+                <h1 class="profile-title">
+                    Hola, soy<br />Erick Zavaleta
+                </h1>
+                <p class="profile-details">
+                    Soy apasionado por las nuevas tecnologías y desarrollo de software
+                    estoy cursando el cuarto ciclo de la carrera Ingenieria de software,
+                    con experiencia básica en algunos lenguajes de programación.
+                </p>
+                <a class="profile-btn" href="/file/erick-cv.pdf" target="_blank" rel="noopener noreferrer">Descargar CV</a>
+            </div>
+            <span class="profile-img-section">
+                <img class="profile-img" src="img/erick.jpeg" alt="Ingeniero de software">
+                <div class="profile-img-line">
+
+                </div>
+            </span>
+        </section>
+    </div>
+    <section class="experiences" id="esperience">
+        <img src="/img/wave.svg" alt="division" class="wave">
+        <div class="experiences-body">
+            <h2 class="experiences-title">Experiencia</h2>
+            <div class="experiences-grid">
+                <div class="empty"></div>
+                <div class="line"></div>
+                <div class="experience">
+                    <div class="experience-date">2020-2022</div>
+                    <div class="experience-company">Likey SAC</div>
+                    <div class="experience-position">Encargado del sistema de venta</div>
+                    <div class="experience-description">
+                        Encargado del correcto funcionamiento del sistema,
+                        de los reportes de ventas, inventario de los productos, realización de codigo de barras y precios. 
+                    </div>
+                </div>
+                
+                <div class="experience  experience_left">
+                    <div class="experience-date">2021-2022</div>
+                    <div class="experience-company">Senati</div>
+                    <div class="experience-position">Estudiante</div>
+                    <div class="experience-description">
+                        Estudiante de Ingenieria de Software e Inteligencia artificial, voy cursando en cuarto ciclo de la carrera.
+                    </div>
+                </div>
+                
+                <div class="line"></div>
+            </div>
+        </div>
+        <img src="/img/wave.svg" alt="division" class=" wave wave_bottom">
+    </section>
+    <div class="horizontal-padding vertical-padding">
+        <section class="skills" id="skills">
+            <h2 class="skills-title">Habilidades</h2>
+            <ul class="skills-list">
+                <li class="skills-skill">CSS</li>
+                <li class="skills-skill">HTML</li>
+                <li class="skills-skill">JAVASCRIPT</li>
+                <li class="skills-skill">JAVA</li>
+                <li class="skills-skill">PYTHON</li>
+                <li class="skills-skill">MySQL</li>
+            </ul>
+        </section>
+    </div>
+    <section class="contact vertical-padding" id="contact">
+        <img src="/img/wave.svg" alt="division" class="wave wave_contact">
+        <div class="contact-body">
+            <h2 class="contact-title">Contactos</h2>
+            <ul class="contact-date">
+                <a href="https://api.whatsapp.com/send?phone=51956602256&text=Hola%20Erick...%20%C2%BFC%C3%B3mo%20estas?" target="_blank" class="icon-date icon-wsp"> <i class="bi bi-whatsapp"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100008026064821" target="_blank" class="icon-date icon-messenger"><i class="bi bi-facebook"></i></a>
+                <a href="https://github.com/ErickZ1" target="_blank" class="icon-date icon-git"><i class="bi bi-github"></i></a>
+                <a href="https://www.instagram.com/__erick__001/" target="_blank" class="icon-date icon-insta"><i class="bi bi-instagram"></i></a>
+            </ul>
+        </div>
+        <img src="/img/wave.svg" alt="division" class="wave wave_bottom">
+    </section>
+</body>
+
+</html>

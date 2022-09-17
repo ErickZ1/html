@@ -1,0 +1,135 @@
+.nav-title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.topheader {
+    box-shadow: 0 8px 5px var(--navbar-shallow-color);
+    position: fixed;
+    background-color: var(--theme-color);
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.topnav {
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+    max-width:900px;
+    margin: 0 auto;
+}
+
+/*logo*/
+.logo {
+    display: flex;
+    align-items: 
+    center;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.logo img {
+    border-radius: 50%;
+}
+
+/*menu*/
+.menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 0 15px;
+    margin:0 20px;
+}
+
+.menu a {
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 50px;
+    text-transform: uppercase;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.menu a::after{
+    content: "";
+    background-color: var(--secondary-color);
+    position: absolute;
+    left: 0;
+    top: calc(100% + 4px);
+    width: 100%;
+    height: 4px;
+
+    opacity: 0;
+    transition: 0.5s;
+}
+.menu a.selected::after,
+.menu a:hover::after{
+    opacity: 0.8;
+}
+.menu a:hover{
+    color: var(--primary-color);
+}
+
+.open-menu,
+.close-menu {
+    display: none;
+}
+
+@media (max-width:810px) {
+    /*menu*/
+    .menu {
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        align-items: center;
+        background-color: var(--menu-mobile-background-color);
+        height: 100%;
+        overflow-y: auto;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+    }
+
+    .menu li {
+        padding: 0;
+    }
+
+    .menu a {
+        color: var(--text-color-inverse);
+        line-height: 70px;
+        font-size: 25px;
+    }
+
+    .open-menu,
+    .close-menu {
+        display: block;
+        border: none;
+        background: none;
+        cursor: pointer;
+        font-size: 30px;
+        font-weight: 900s;
+    }
+    .close-menu{
+        align-self: flex-end;
+        padding: 20px 12px;
+    }
+    .menu_opened{
+        opacity: 1;
+        pointer-events: all;
+    }
+    .menu a::after{
+        content: none;
+    }
+    .menu a:hover,
+    .menu a.selected{
+        color: var(--secondary-color);
+    }
+}

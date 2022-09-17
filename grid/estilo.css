@@ -1,0 +1,32 @@
+* {
+    font-family: cursive;
+    font-weight: 100px;
+}
+body{
+    background: radial-gradient(circle, #ffffff,rgb(170, 172, 170));
+    padding: 20px;
+    display: flex;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    grid-auto-columns: 100px;
+    grid-gap: 10px;
+}
+img {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+img:first-child{
+    grid-column: 1 / 3;
+    grid-row: 1/3;
+}
+img:nth-child(9){
+    grid-column: 3/6;
+    grid-row: 3/5 ;
+
+}
+img:nth-child(10){
+    grid-row: span 2;
+}
